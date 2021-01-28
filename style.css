@@ -1,0 +1,42 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.card{
+    
+
+  height: 300px;
+  width: 150px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 52px 0px rgba(64, 86, 209, 0.25);
+  
+
+}
+#top{
+    float: left;
+    margin-left: 16px;
+    margin-top: 10px;
+}
+#bottom{
+    
+    float: right;
+    
+    transform: rotate(180deg);
+    margin-top: 120px;
+    margin-right: 16px;
+    
+    
+}
+#center{
+   
+    text-align: center;
+    justify-content: end;
+    margin-top: 130px;
+    margin-left: 10;
+}
