@@ -22,14 +22,16 @@ body{
     float: left;
     margin-left: 16px;
     margin-top: 10px;
+    font-size: 50px;
 }
 #bottom{
     
     float: right;
     
     transform: rotate(180deg);
-    margin-top: 120px;
+    margin-top: 60px;
     margin-right: 16px;
+    font-size: 50px;
     
     
 }
@@ -39,4 +41,5 @@ body{
     justify-content: end;
     margin-top: 130px;
     margin-left: 10;
+    font-size: 40px;
 }
