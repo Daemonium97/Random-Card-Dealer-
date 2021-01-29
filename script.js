@@ -1,13 +1,11 @@
 window.onload = function () {
-    
+
     let suits = ['♥', '♣', '♠', '♦'];
     let numbers = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'k'];
-    
-    // if(suits[0] || suits[3]){
-    //     style.color = "red";
-    // }
+    let colors = ["Red", "Black"];
 
-    let top= document.getElementById("top");
+
+    let top = document.getElementById("top");
     let center = document.getElementById("center");
     let bottom = document.getElementById("bottom");
 
@@ -23,13 +21,21 @@ window.onload = function () {
         return numb;
 
     }
+    function colorsRandom() {
+
+        let col = colors[Math.floor(Math.random() * colors.length)];
+        return col;
+
+    }
 
     let resul = randomSuits();
+    let kol = colorsRandom();
 
-    top.innerHTML = resul;
+
+    document.querySelector('#top').innerHTML = '<p style=color:' + kol + ';' + 'id=' + 'arriba' + '>' + resul + '</p>';
     center.innerHTML = numbersRandom();
-    bottom.innerHTML = resul;
-    
+    document.querySelector('#bottom').innerHTML = '<p style=color:' + kol + ';' + 'id=' + 'abajo' + '>' + resul + '</p>';
+
 
 
 
